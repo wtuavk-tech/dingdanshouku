@@ -9,11 +9,11 @@ interface PaginationProps {
 
 export const Pagination: React.FC<PaginationProps> = ({ total, pageSize, current }) => {
   return (
-    <div className="flex items-center justify-center gap-3 text-sm text-gray-600 py-4 mt-2">
+    <div className="flex items-center justify-center gap-3 text-sm text-gray-600">
       <span className="text-gray-500">共 {total} 条</span>
       
       <div className="relative">
-        <select className="appearance-none border border-gray-300 rounded px-2 py-1 pr-6 bg-white focus:outline-none focus:border-blue-500 cursor-pointer">
+        <select className="appearance-none border border-gray-300 rounded-md px-2 py-1 pr-6 bg-white focus:outline-none focus:border-blue-500 cursor-pointer">
           <option>15条/页</option>
           <option>30条/页</option>
           <option>50条/页</option>
@@ -26,32 +26,32 @@ export const Pagination: React.FC<PaginationProps> = ({ total, pageSize, current
       </div>
 
       <div className="flex items-center space-x-1">
-        <button className="p-1 rounded bg-gray-100 text-gray-400 hover:bg-gray-200 disabled:opacity-50">
+        <button className="p-1 rounded-md bg-gray-100 text-gray-400 hover:bg-gray-200 disabled:opacity-50">
           <ChevronLeft className="w-4 h-4" />
         </button>
-        <button className="w-8 h-8 rounded bg-blue-500 text-white font-medium flex items-center justify-center">
+        <button className="w-8 h-8 rounded-md bg-blue-500 text-white font-medium flex items-center justify-center">
           1
         </button>
-        <button className="w-8 h-8 rounded hover:bg-gray-100 text-gray-600 flex items-center justify-center">
+        <button className="w-8 h-8 rounded-md hover:bg-gray-100 text-gray-600 flex items-center justify-center">
           2
         </button>
-        <button className="w-8 h-8 rounded hover:bg-gray-100 text-gray-600 flex items-center justify-center">
+        <button className="w-8 h-8 rounded-md hover:bg-gray-100 text-gray-600 flex items-center justify-center">
           3
         </button>
-        <button className="w-8 h-8 rounded hover:bg-gray-100 text-gray-600 flex items-center justify-center">
+        <button className="w-8 h-8 rounded-md hover:bg-gray-100 text-gray-600 flex items-center justify-center">
           4
         </button>
-        <button className="w-8 h-8 rounded hover:bg-gray-100 text-gray-600 flex items-center justify-center">
+        <button className="w-8 h-8 rounded-md hover:bg-gray-100 text-gray-600 flex items-center justify-center">
           5
         </button>
-        <button className="w-8 h-8 rounded hover:bg-gray-100 text-gray-600 flex items-center justify-center">
+        <button className="w-8 h-8 rounded-md hover:bg-gray-100 text-gray-600 flex items-center justify-center">
           6
         </button>
         <span className="px-2 text-gray-400">...</span>
-        <button className="w-8 h-8 rounded hover:bg-gray-100 text-gray-600 flex items-center justify-center">
+        <button className="w-8 h-8 rounded-md hover:bg-gray-100 text-gray-600 flex items-center justify-center">
           187
         </button>
-        <button className="p-1 rounded bg-gray-100 text-gray-400 hover:bg-gray-200">
+        <button className="p-1 rounded-md bg-gray-100 text-gray-400 hover:bg-gray-200">
           <ChevronRight className="w-4 h-4" />
         </button>
       </div>
@@ -61,7 +61,7 @@ export const Pagination: React.FC<PaginationProps> = ({ total, pageSize, current
         <input 
           type="text" 
           defaultValue="1"
-          className="w-10 h-8 border border-gray-300 rounded text-center focus:outline-none focus:border-blue-500"
+          className="w-10 h-8 border border-gray-300 rounded-md text-center focus:outline-none focus:border-blue-500"
         />
         <span>页</span>
       </div>

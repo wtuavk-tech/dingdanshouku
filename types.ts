@@ -15,6 +15,7 @@ export interface OrderEntry {
   failReason: string;     // 验券失败原因
   remark: string;         // 备注
   creator: string;        // 创建人
+  source: string;         // 来源 (新增)
 }
 
 export interface PaginationState {

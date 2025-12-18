@@ -3,7 +3,7 @@ import { Bell, Flame, Trophy, Megaphone } from 'lucide-react';
 
 export const SystemNotice: React.FC = () => {
   return (
-    <div className="bg-[#FFFBE6] border border-[#FFE58F] text-[#FA8C16] text-sm py-2 px-4 rounded-sm flex items-center overflow-hidden mb-3">
+    <div className="bg-[#FFF7E6] border border-[#FFD591] text-[#FA8C16] text-sm py-2 px-4 rounded-lg flex items-center overflow-hidden mb-3">
       <div className="flex-shrink-0 mr-4 font-bold flex items-center gap-1">
         <Bell className="w-4 h-4" />
         系统公告

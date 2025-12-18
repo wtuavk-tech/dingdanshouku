@@ -8,7 +8,7 @@ interface DataOverviewProps {
 
 export const DataOverview: React.FC<DataOverviewProps> = ({ onToggleFilter, isFilterVisible }) => {
   return (
-    <div className="bg-[#E6F7FF] border border-[#91D5FF] rounded-sm p-4 flex items-center justify-between mb-3">
+    <div className="bg-[#E6F7FF] border border-[#91D5FF] rounded-lg p-4 flex items-center justify-between mb-3">
       {/* Left Title */}
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2 text-[#0050B3] font-bold text-lg">
